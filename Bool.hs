@@ -1,8 +1,9 @@
 module Bool where
-import Prelude hiding(Bool, (&&), (||), not, True, False)
+
+import Prelude hiding (Bool, False, True, not, (&&), (||))
 
 data Bool = True | False
-  deriving ( Eq , Show )
+  deriving (Eq, Show)
 
 (&&) :: Bool -> Bool -> Bool
 (&&) True True = True
